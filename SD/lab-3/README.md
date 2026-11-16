@@ -1,4 +1,4 @@
-[Uploading README.md…]()
+[README.md](https://github.com/user-attachments/files/34943227/README.md)
 # Laboratorul 3 — Arhitectura de bază a sistemului
 
 **Disciplina:** Proiectarea sistemelor informatice  
@@ -110,7 +110,7 @@ sequenceDiagram
     C->>DB: Cere drept de executare și poziția ultimei sincronizări
     DB-->>C: Stare, cursor și moment permis pentru retry
     alt Sincronizarea nu este permisă acum
-        Note over C: Nu face apel suplimentar către furnizor
+        Note right of C: Nu face apel suplimentar către furnizor
     else Sincronizarea este permisă
         C->>P: Cere un lot folosind cheia păstrată pe server
         alt Timeout sau limitare a cererilor (429)
@@ -130,7 +130,7 @@ sequenceDiagram
                     Note over C,DB: Numai acum datele sunt disponibile cititorilor
                 else Salvare eșuată sau rezultat incert
                     DB-->>C: Eroare sau lipsa confirmării
-                    Note over C: Nu afirmă succes; la reluare verifică progresul
+                    Note right of C: Nu afirmă succes; la reluare verifică progresul
                 end
             end
         end
@@ -211,7 +211,7 @@ sequenceDiagram
                 L->>DB: Tranzacție: adaugă sau elimină fără duplicate
                 alt Commit confirmat
                     DB-->>L: Modificare durabilă confirmată
-                    Note over L: Aici poate fi raportat succesul
+                    Note right of L: Aici poate fi raportat succesul
                     L-->>G: Confirmare cu noua stare
                 else Baza de date eșuează sau confirmarea lipsește
                     DB-->>L: Eroare sau rezultat necunoscut

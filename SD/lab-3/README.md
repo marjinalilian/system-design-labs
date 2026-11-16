@@ -130,7 +130,7 @@ sequenceDiagram
                     Note over C,DB: Numai acum datele sunt disponibile cititorilor
                 else Salvare eșuată sau rezultat incert
                     DB-->>C: Eroare sau lipsa confirmării
-                    Note right of C: Nu afirmă succes; la reluare verifică progresul
+                    Note right of C: Nu afirmă succes și verifică progresul la reluare
                 end
             end
         end

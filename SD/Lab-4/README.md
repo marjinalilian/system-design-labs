@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/34943768/README.md)
+
 # Laboratorul 4 — Scalarea traseului de citire al Dashboard-ului
 
 **Disciplina:** Proiectarea sistemelor informatice  

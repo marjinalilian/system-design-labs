@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/34944016/README.md)
+
 # Laboratorul 5 — Modelul datelor și proiectarea API-ului
 
 **Disciplina:** Proiectarea sistemelor informatice  
